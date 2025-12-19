@@ -7,8 +7,9 @@
         <link rel="icon" href="./assets/img/logo.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Story+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.1/lottie.min.js"></script>
         <title>Inicio</title>
     </head>
     <body>
@@ -27,9 +28,19 @@
                 </div>
             </nav>
         </header>
-        <main>
 
+        <main>
+            <section id="hero">
+                <img src="./assets/img/hanafuda-hero.jpg" alt="hanafuda">
+                <div id="hero-content">
+                    <h1>Descubre el arte<br>del Hanafuda</h1>
+                    <p>Tradición japonesa, arte en cada carta y estrategia en cada jugada.</p>
+                    <a href="./historia.html">SABER MÁS</a>
+                </div>
+            </section>
+            <!--<div id="mi-lottie"></div>-->
         </main>
+
         <footer>
             <div id="footer-socials">
                 <a href="https://facebook.com" target="_blank">Facebook&emsp;<span class="material-icons">facebook</span></a>
@@ -45,5 +56,15 @@
                 <p>HANAFUDA COMMUNITY</p>
             </div>
         </footer>
+        
+    <script>
+        const animacion = lottie.loadAnimation({
+        container: document.getElementById('mi-lottie'), // div donde se mostrará
+        renderer: 'svg',       // renderiza como SVG
+        loop: true,            // repetir animación
+        autoplay: true,        // reproducir automáticamente
+        path: './assets/lottie/flowering-plant.json' // ruta al archivo JSON local
+        });
+    </script>
     </body>
 </html>
