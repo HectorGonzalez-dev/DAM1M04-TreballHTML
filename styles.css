@@ -1,0 +1,88 @@
+body {
+    background-color: #DCD9D0;
+    margin: 0;
+}
+
+nav {
+    background-image: url("assets/img/wood.jpg");
+    background-position: center;
+    height: 70px;
+    width: 100%;
+    border-bottom-color: #1D0D0D;
+    border-bottom-style: solid;
+    border-bottom-width: 7px;
+    color: #FFF2E1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1000;
+}
+
+nav p {
+    font-family: "Story Script", sans-serif;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    height: 65%;
+    text-decoration: none;
+    color: #FFF2E1;
+    font-family: "Story Script", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    border-color: #B08F66;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    padding: 0.3rem 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+nav a:hover {
+    color: #FFF8E3;
+    box-shadow: 0 0 12px rgba(255, 242, 225, 0.6);
+    text-shadow: 0 0 6px rgba(255, 242, 225, 0.7);
+}
+
+/* Esto es una característica experimental y solo funciona en ciertos navegadores, pero me gustaba como quedaba */
+@supports (corner-shape: scoop) {
+    nav a {
+        corner-shape: scoop; /* Aunque de error funciona, chrome es uno de los navegadores que lo aceptan */
+    }
+}
+
+.no-select {
+    user-select: none;
+}
+
+.nav-div-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.nav-div-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    gap: 30px;
+}
+
+#nav-logo {
+    height: 90%;
+    width: auto;
+    margin-right: 20px;
+}
+
+.nav-button-img {
+    height: 100%;
+    margin-right: 10px;
+}
