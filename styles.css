@@ -350,17 +350,20 @@ footer p {
 .navArrow img {
     width: 60%;
     height: auto; 
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .navArrow:hover img {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); /* glow interno */
+    transform: scale(1.1);
+    filter: brightness(1.2) drop-shadow(0 0 8px rgba(255, 255, 255, 0.5)) invert(0);
 }
 
 .prev { left: -50px; }
 .next { right: -50px; }
 
 /* Mostrar flechas según slide */
+#carrusel:has(#slide1:checked) .arrowPrev1,
 #carrusel:has(#slide1:checked) .arrowNext1 { display: flex; }
 
 #carrusel:has(#slide2:checked) .arrowPrev2,
@@ -372,7 +375,8 @@ footer p {
 #carrusel:has(#slide4:checked) .arrowPrev4,
 #carrusel:has(#slide4:checked) .arrowNext4 { display: flex; }
 
-#carrusel:has(#slide5:checked) .arrowPrev5 { display: flex; }
+#carrusel:has(#slide5:checked) .arrowPrev5,
+#carrusel:has(#slide5:checked) .arrowNext5 { display: flex; }
 
 /* Dots */
 .dots {
