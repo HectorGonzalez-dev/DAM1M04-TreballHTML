@@ -446,7 +446,8 @@ h2 {
 
 .apartado {
     display: flex;
-    margin-bottom: 100px;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
 #historia p {
@@ -455,8 +456,13 @@ h2 {
     margin: 0;
 }
 
+#historia .apartado p {
+    margin-bottom: 10px;
+}
+
 .apartado:nth-of-type(1) {
     width: 100%;
+    flex-direction: row;
 }
 
 .apartado:nth-of-type(1) p {
@@ -474,10 +480,57 @@ h2 {
     justify-items: center;
 }
 
+#infobox h2 {
+    border-bottom-style: none;
+    color: #FFF2E1;
+    margin: 0px;
+}
+
+#infobox img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 #golden-outline {
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     border-color: #906D29;
     border-radius: 40px;
     height: 90%;
     width: 85%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#golden-outline div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    background-color: #FFF2E1;
+    text-align: start;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#golden-outline p {
+    margin-left: 5px ;
+}
+
+#historia-img {
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #906D29;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.paragrafos-imagen {
+    display: flex;
 }
