@@ -562,3 +562,52 @@ h2 {
     font-family: "Ubuntu", sans-serif;
     color: rgb(80, 80, 80);
 }
+
+/* Estilos instrucciones */
+#instrucciones-hero {
+    border-bottom-style: solid;
+    width: 100%;
+    height: 300px;
+    padding-left: 250px;
+    box-sizing: border-box;
+    border-color: #604331;
+    border-bottom-width: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#instrucciones-hero h1 {
+    font-family: "Cinzel", serif;
+    color: #822C21;
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+#instrucciones-hero h2 {
+    color: #433020;
+    border-style: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    width: auto;
+}
+
+#grulla {
+    height: 200px;
+    width: auto;
+    transform: rotate(15deg);
+    margin-left: 100px;
+}
+
+.sakura-tree {
+    position: absolute;
+    width: 1000px;
+    opacity: 0.8;
+    pointer-events: none;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100px);
+}
