@@ -7,8 +7,7 @@
         <link rel="icon" href="./assets/img/logo.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Story+Script&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Story+Script&display=swap" rel="stylesheet">        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Historia</title>
     </head>
     <body>
@@ -29,62 +28,75 @@
         </header>
 
         <main>
-        <section id="carrusel">
-            <h1 class="titulo">Historia sobre el Hanafuda</h1>
-            <div class="container">
-                <div class="carousel">
+            <section id="carrusel">
+                <h1 class="titulo">Historia sobre el Hanafuda</h1>
+                <div class="container">
+                    <div class="carousel">
 
-                    <!-- Radio buttons -->
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-                    <input type="radio" name="slide" id="slide4">
-                    <input type="radio" name="slide" id="slide5">
+                        <!-- Radio buttons -->
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">
 
-                    <!-- Slides -->
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="./assets/img/antiguo.jpg" alt="Historia del Hanafuda 1">
+                        <!-- Slides -->
+                        <div class="slides">
+                            <div class="slide">
+                                <img src="./assets/img/antiguo.jpg" alt="Historia del Hanafuda 1">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/img/arte.jpg" alt="Historia del Hanafuda 2">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/img/cartas.jpg" alt="Historia del Hanafuda 3">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/img/expo.jpg" alt="Historia del Hanafuda 4">
+                            </div>
+                            <div class="slide">
+                                <img src="./assets/img/kny.jpg" alt="Historia del Hanafuda 5">
+                            </div>
                         </div>
-                        <div class="slide">
-                            <img src="./assets/img/arte.jpg" alt="Historia del Hanafuda 2">
+
+                        <!-- Puntos de navegación -->
+                        <div class="dots">
+                            <label class="dot" for="slide1"></label>
+                            <label class="dot" for="slide2"></label>
+                            <label class="dot" for="slide3"></label>
+                            <label class="dot" for="slide4"></label>
+                            <label class="dot" for="slide5"></label>
                         </div>
-                        <div class="slide">
-                            <img src="./assets/img/cartas.jpg" alt="Historia del Hanafuda 3">
-                        </div>
-                        <div class="slide">
-                            <img src="./assets/img/expo.jpg" alt="Historia del Hanafuda 4">
-                        </div>
-                        <div class="slide">
-                            <img src="./assets/img/kny.jpg" alt="Historia del Hanafuda 5">
-                        </div>
+
                     </div>
+                    <!-- Flechas previas -->
+                    <label for="slide1" class="navArrow prev arrowPrev2"><img src="./assets/img/larrow.png" alt="arrow"></label>
+                    <label for="slide2" class="navArrow prev arrowPrev3"><img src="./assets/img/larrow.png" alt="arrow"></label>
+                    <label for="slide3" class="navArrow prev arrowPrev4"><img src="./assets/img/larrow.png" alt="arrow"></label>
+                    <label for="slide4" class="navArrow prev arrowPrev5"><img src="./assets/img/larrow.png" alt="arrow"></label>
+                    <label for="slide5" class="navArrow prev arrowPrev1"><img src="./assets/img/larrow.png" alt="arrow"></label>
 
-                    <!-- Puntos de navegación -->
-                    <div class="dots">
-                        <label class="dot" for="slide1"></label>
-                        <label class="dot" for="slide2"></label>
-                        <label class="dot" for="slide3"></label>
-                        <label class="dot" for="slide4"></label>
-                        <label class="dot" for="slide5"></label>
-                    </div>
-
+                    <!-- Flechas siguientes -->
+                    <label for="slide1" class="navArrow next arrowNext5"><img src="./assets/img/rarrow.png" alt="arrow"></label>
+                    <label for="slide2" class="navArrow next arrowNext1"><img src="./assets/img/rarrow.png" alt="arrow"></label>
+                    <label for="slide3" class="navArrow next arrowNext2"><img src="./assets/img/rarrow.png" alt="arrow"></label>
+                    <label for="slide4" class="navArrow next arrowNext3"><img src="./assets/img/rarrow.png" alt="arrow"></label>
+                    <label for="slide5" class="navArrow next arrowNext4"><img src="./assets/img/rarrow.png" alt="arrow"></label>
                 </div>
-                <!-- Flechas previas -->
-                <label for="slide1" class="navArrow prev arrowPrev2"><img src="./assets/img/larrow.png" alt="arrow"></label>
-                <label for="slide2" class="navArrow prev arrowPrev3"><img src="./assets/img/larrow.png" alt="arrow"></label>
-                <label for="slide3" class="navArrow prev arrowPrev4"><img src="./assets/img/larrow.png" alt="arrow"></label>
-                <label for="slide4" class="navArrow prev arrowPrev5"><img src="./assets/img/larrow.png" alt="arrow"></label>
-                <label for="slide5" class="navArrow prev arrowPrev1"><img src="./assets/img/larrow.png" alt="arrow"></label>
+            </section>
 
-                <!-- Flechas siguientes -->
-                <label for="slide1" class="navArrow next arrowNext5"><img src="./assets/img/rarrow.png" alt="arrow"></label>
-                <label for="slide2" class="navArrow next arrowNext1"><img src="./assets/img/rarrow.png" alt="arrow"></label>
-                <label for="slide3" class="navArrow next arrowNext2"><img src="./assets/img/rarrow.png" alt="arrow"></label>
-                <label for="slide4" class="navArrow next arrowNext3"><img src="./assets/img/rarrow.png" alt="arrow"></label>
-                <label for="slide5" class="navArrow next arrowNext4"><img src="./assets/img/rarrow.png" alt="arrow"></label>
-            </div>
-        </section>
+            <section id="historia">
+                <h2>¿Qué es el Hanafuda?</h2>
+                <div class="apartado">
+                    <p>Hanafuda es una baraja de cartas karuta (barajas tradicionales de naipes japoneses), que se inventó a mediados del siglo XVI. Por lo general, son más pequeñas que las cartas occidentales, solo 5,4 x 3,2 cm, pero más gruesas y rígidas. En el anverso de cada carta se encuentra una representación de plantas, tanzaku (短冊), animales, pájaros u objetos hechos por humanos. Solo una de estas cartas representa a una persona. Su reverso suele ser liso, sin ningún patrón ni diseño, y tradicionalmente coloreado en rojo o negro. Se usan para varios juegos de mesa de hacer parejas, o juegos de pesca, como son conocidos allí, entre estos los más comunes serían Koi-Koi y Hachi-Hachi.</p>
+                    <div id="infobox">
+                        <div id="golden-outline">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer>

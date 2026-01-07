@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     background-color: #E9E3CD;
     margin: 0;
 }
@@ -7,6 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
@@ -22,6 +22,12 @@ main {
 ----------------------
 */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 nav {
     background-image: url("assets/img/wood.jpg");
     background-position: center;
@@ -35,8 +41,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    z-index: 1000;
 }
 
 nav p {
@@ -271,7 +275,7 @@ footer p {
 
 .titulo {
     color: #906D29;
-    font-family: "Inter", sans-serif;
+    font-family: "Cinzel", serif;
     text-align: center;
     font-size: 3rem;
 }
@@ -420,4 +424,60 @@ footer p {
         height: 40px;
         font-size: 20px;
     }
+}
+
+/* Estilos de la seccion de la historia del juego */
+
+#historia {
+    width: 65%;
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    color: #906D29;
+    font-size: 2rem;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(144,109,41,0.5);
+    padding: 5px;
+    margin: 20px 0px;
+}
+
+.apartado {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#historia p {
+    font-family: "EB Garamond", serif;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.apartado:nth-of-type(1) {
+    width: 100%;
+}
+
+.apartado:nth-of-type(1) p {
+    width: 100%;
+}
+
+#infobox {
+    background-image: url("assets/img/wood.jpg");
+    background-position: center;
+    height: 400px;
+    width: 40%;
+    margin-left: 50px;
+    border-radius: 40px;
+    align-content: center;
+    justify-items: center;
+}
+
+#golden-outline {
+    border-style: solid;
+    border-color: #906D29;
+    border-radius: 40px;
+    height: 90%;
+    width: 85%;
 }
