@@ -233,6 +233,15 @@ footer p {
     text-align: center;
     font-size: 2rem;
     padding: 0px 30px;
+    position: relative;
+}
+
+#mi-lottie {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
 }
 
 #hero-content h1 {
