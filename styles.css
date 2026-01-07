@@ -543,3 +543,22 @@ h2 {
 .paragrafos-imagen {
     display: flex;
 }
+
+/* Estilos about */
+
+#h1about {
+    font-family: "Cinzel", serif;
+    color: #906D29;
+    font-size: 3rem;
+}
+
+#h2about {
+    font-family: "Ubuntu", sans-serif;
+    width: auto;
+    border-style: none;
+}
+
+#subtexto-about {
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(80, 80, 80);
+}
