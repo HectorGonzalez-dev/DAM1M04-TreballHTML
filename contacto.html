@@ -27,8 +27,77 @@
                 </div>
             </nav>
         </header>
-        <main>
-
+        <main id="contacto-main">
+            <section id="contacto-container" class="container">
+                <h1 class="titulo">Contacto</h1>
+                <div id="contacto-info">
+                    <div class="contacto-datos">
+                        <h2>Dirección</h2>
+                        <p>Calle del Juego 123<br>28000 Madrid, España</p>
+                        <div class="mapa-responsive">
+                            <iframe 
+                                src="https://www.google.com/maps?q=Madrid&output=embed"
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contacto-datos">
+                        <h2>Teléfono</h2>
+                        <p><a href="tel:+34900111222" class="contacto-link">+34 900 111 222</a></p>
+                        <h2>Email</h2>
+                        <p><a href="mailto:info@midominio.com" class="contacto-link">info@midominio.com</a></p>
+                    </div>
+                </div>
+                <div id="contacto-formulario">
+                    <h2>Envíanos tu petición</h2>
+                    <form novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre"
+                                required
+                                pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,40}$"
+                                placeholder="Tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono"
+                                required
+                                pattern="^\+?[0-9\s\-]{9,15}$"
+                                placeholder="+34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                required
+                                pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+                                placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Petición</label>
+                            <textarea 
+                                id="mensaje" 
+                                name="mensaje"
+                                required
+                                pattern=".{10,500}"
+                                placeholder="Escribe tu mensaje (mínimo 10 caracteres)"
+                                rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
             <div id="footer-socials">

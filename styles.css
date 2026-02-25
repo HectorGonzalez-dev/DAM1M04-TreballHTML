@@ -611,3 +611,134 @@ h2 {
     z-index: 1;
     transform: translateX(100px);
 }
+
+/* ---------------------------------------
+        CONTACTO
+--------------------------------------- */
+
+#contacto-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#contacto-container {
+    width: 70%;
+    background-color: #f3eee3;
+    padding-bottom: 40px;
+}
+
+#contacto-info {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contacto-datos {
+    flex: 1;
+    min-width: 280px;
+    font-family: "EB Garamond", serif;
+    color: #433020;
+}
+
+.contacto-link {
+    text-decoration: none;
+    color: #906D29;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contacto-link:hover {
+    text-shadow: 0 0 6px rgba(144,109,41,0.5);
+}
+
+.mapa-responsive {
+    margin-top: 15px;
+    border: 4px solid #906D29;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mapa-responsive iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/* ---------------------------------------
+        FORMULARIO
+--------------------------------------- */
+
+#contacto-formulario {
+    font-family: "Ubuntu", sans-serif;
+    color: #433020;
+}
+
+#contacto-formulario textarea {
+    resize: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #906D29;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease;
+    background-color: #FFF8E3;
+}
+
+/* Campo válido */
+.form-group input:valid,
+.form-group textarea:valid {
+    border-color: #4CAF50;
+    box-shadow: 0 0 6px rgba(76,175,80,0.4);
+}
+
+/* Campo inválido */
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+    border-color: #B22222;
+    box-shadow: 0 0 6px rgba(178,34,34,0.4);
+}
+
+/* Botón */
+
+.btn-enviar {
+    width: fit-content;
+    align-self: flex-start;
+    padding: 10px 30px;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    border: 3px solid #906D29;
+    background-color: transparent;
+    color: #906D29;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #906D29;
+    color: #FFF8E3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(144,109,41,0.3);
+}
