@@ -109,6 +109,115 @@ nav a:hover {
     margin-right: 10px;
 }
 
+/* ----------------------
+   CHECKBOX OCULTO
+---------------------- */
+
+#menu-toggle {
+    display: none;
+}
+
+/* ----------------------
+   HAMBURGER
+---------------------- */
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #FFF2E1;
+    transition: 0.3s;
+}
+
+/* ----------------------
+   RESPONSIVE
+---------------------- */
+
+@media (max-width: 900px) {
+
+    nav {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        position: relative; /* para que el menú absoluto se posicione debajo */
+    }
+
+    #nav-div-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #nav-logo {
+        height: 50px;
+        width: auto;
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    #hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #FFF2E1;
+        transition: 0.3s;
+    }
+
+    /* Menú absoluto debajo de la barra */
+    #nav-div-right {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-image: url("assets/img/wood.jpg");
+        border-bottom: 7px solid #1D0D0D;
+
+        display: none;            /* oculto por defecto */
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    /* Cuando se activa el checkbox */
+    #menu-toggle:checked ~ #nav-div-right {
+        display: flex;            /* se muestra completo */
+        padding-bottom: 220px;
+    }
+
+    /* Opciones */
+    #nav-div-right a {
+        width: 80%;
+        font-size: 1rem;
+        padding: 8px 12px;
+        justify-content: center;
+    }
+
+    .nav-button-img {
+        height: 20px;
+        margin-right: 8px;
+    }
+}
+
+
+
 /* --------------------------------------- */
 
 /*
