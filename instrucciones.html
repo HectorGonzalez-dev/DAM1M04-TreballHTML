@@ -27,7 +27,7 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main id="instrucciones-main">
             <section id="instrucciones-hero">
                 <div>
                     <h1>El arte del Koi-Koi</h1>
@@ -36,11 +36,105 @@
                 <img src="./assets/img/grulla.jpg" alt="grulla" id="grulla">
                 <img src="./assets/img/sakura-tree.png" alt="sakura-tree" class="sakura-tree">
             </section>
-            <section>
-                <h1 class="titulo">Mecánicas básicas del juego</h1>
-                <div>
-                    <div>
-                        
+
+            <section id="instrucciones-section">
+                <div class="container">
+                    <h1 class="titulo">Cómo jugar a Koi-Koi</h1>
+
+                    <div id="bloque-instrucciones">
+
+                        <div class="paso">
+                            <div class="paso-img">
+                                <img src="./assets/img/preparando.png" alt="Captura preparación partida">
+                            </div>
+                            <div class="paso-texto">
+                                <h2>1. Preparación de la ronda</h2>
+                                <p>
+                                    Se reparten 8 cartas a cada jugador y 8 se colocan en la mesa.
+                                    El resto forma el mazo. Las cartas se organizan por mes
+                                    (familias florales).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="paso">
+                            <div class="paso-img">
+                                <img src="./assets/img/turno.png" alt="Captura turno jugador">
+                            </div>
+                            <div class="paso-texto">
+                                <h2>2. Desarrollo del turno</h2>
+                                <p>
+                                    El jugador juega una carta de su mano e intenta emparejarla
+                                    con una carta del mismo mes en la mesa. Después roba del mazo
+                                    y repite el proceso.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="paso">
+                            <div class="paso-img">
+                                <img src="./assets/img/koikoi.png" alt="Captura declaración Koi-Koi">
+                            </div>
+                            <div class="paso-texto">
+                                <h2>3. Declarar Koi-Koi</h2>
+                                <p>
+                                    Cuando se forma un Yaku, el jugador puede finalizar la ronda
+                                    o declarar “Koi-Koi” para continuar y aumentar el multiplicador
+                                    de puntuación.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="mecanicas-section">
+                <div class="container">
+                    <h1 class="titulo">Mecánicas del juego</h1>
+
+                    <div class="mecanicas-grid">
+
+                        <div class="card-mecanica">
+                            <div class="card-inner">
+                                <h2>Emparejamiento por mes</h2>
+                                <p>
+                                    Solo pueden capturarse cartas que compartan el mismo mes
+                                    o familia floral.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-mecanica">
+                            <div class="card-inner">
+                                <h2>Construcción de Yaku</h2>
+                                <p>
+                                    Las combinaciones de cartas generan puntuación acumulativa.
+                                    Existen categorías como Hikari, Tane, Tanzaku y Kasu.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-mecanica">
+                            <div class="card-inner">
+                                <h2>Riesgo estratégico</h2>
+                                <p>
+                                    Declarar Koi-Koi aumenta la recompensa potencial, pero
+                                    permite al rival seguir jugando y superar la puntuación.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-mecanica">
+                            <div class="card-inner">
+                                <h2>Multiplicador de ronda</h2>
+                                <p>
+                                    Cada nuevo Yaku incrementa el valor total de la ronda,
+                                    escalando el resultado final.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
